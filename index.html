@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wifesteal Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Wifesteal Network</h1>
+    <p class="ip">IP: <span id="server-ip">play.wifesteal.xyz</span>
+      <button onclick="copyIP()">Copy IP</button>
+    </p>
+
+    <div class="info">
+      <h2>Server Info</h2>
+      <ul>
+        <li>🔥 Lifesteal SMP</li>
+        <li>⚔️ Competitive PvP Events</li>
+        <li>🌐 24/7 Online Server</li>
+        <li>🎁 Crates, Kits & Ranks</li>
+        <li>👥 Active Community</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function copyIP() {
+      const ip = document.getElementById('server-ip').textContent;
+      navigator.clipboard.writeText(ip);
+      alert('IP copied to clipboard!');
+    }
+  </script>
+</body>
+</html>
